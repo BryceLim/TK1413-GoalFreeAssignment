@@ -20,7 +20,7 @@ public class MainMenu extends JFrame implements ActionListener{
         driBt = new JButton("Register Driver");
         vehBt = new JButton("Register Vehicle");
         jobBt = new JButton("Assign Jobs");
-        listjobBt = new JButton("List Jobs");
+        listjobBt = new JButton("Job List");
         
         recBt.addActionListener(this);
         parBt.addActionListener(this);
