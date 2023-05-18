@@ -52,7 +52,13 @@ public class RegisterReceiver extends JFrame implements ActionListener{
 		pane.add(p2, BorderLayout.SOUTH);
 		
 		receiver=new Receiver[10];
-		currentIndex=0;
+		receiver[0] = new Receiver("Khor Yi Qian", "khor@gmail.com", "0152358375", "17, Jalan Pju 8/3B,\nBandar Damansara Perdana\n47820 Petaling Jaya\nSelangor");
+		receiver[1] = new Receiver("Ahmad bin Shafiz", "ahmad@gmail.com", "0172439473", "252, Jalan Midah 7,\n Taman Midah\n30450 Ipoh\nPerak");
+		receiver[2] = new Receiver("Shati a/p Nagulan", "shati@gmail.com", "0183057402", "22, Jalan Ss25/34,\nMayang Industrial Park\n47301 Petaling Jaya\nSelangor");
+		receiver[3] = new Receiver("Tan Yan Yu", "tan@gmail.com", "0139275034", "2, Wisma Rampai Jln 34/26,\nTaman Sri Rampai\n53300 Wilayah Persekutuan\nKuala Lumpur");
+		receiver[4] = new Receiver("Siti binti Hamzan", "siti@gmail.com", "0182230534", "No 9-1 Jalan Sp 1,\nTaman Semabok Perdana\n75050 Alor Gajah\nMelaka");
+		receiver[5] = new Receiver("Kogulan a/l Sativaran", "kogulan@gmail.com", "0191213777", "No. 9-1 Jalan Sp 1,\nTaman Semabok Perdana\n40150 Shah Alam\nSelangor");
+		currentIndex=6;
 		
 	}
 	

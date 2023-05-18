@@ -3,7 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class JobDescription extends JFrame{
-	private JLabel title,driver,dcontact,vehicle,plate,date;//receiver,rcontact,address,parcel,remark,insurance,payment method;
+	private JLabel title,driver,demail,dcontact,gender,license,vehicle,plate,date;
 	private JTextArea textArea;
 	private JScrollPane scrollPane;
 
@@ -22,7 +22,10 @@ public class JobDescription extends JFrame{
 		
 		title = new JLabel("Job Description",JLabel.CENTER);
 		driver = new JLabel("Driver : " + job.getDriverName());
+		demail = new JLabel("Email : " + job.getDriverEmail());
 		dcontact = new JLabel("Contact : " + job.getDriverContact());
+		gender = new JLabel("Gender : " + job.getDriverGender());
+		license = new JLabel("License : " + job.getDriverLicense());
 		vehicle = new JLabel("Vehicle : " + job.getVehicle());
 		plate = new JLabel("Registration Plate : " + job.getPlate());
 		date = new JLabel("Shipment Date : " + job.getShippingDate());
@@ -34,7 +37,7 @@ public class JobDescription extends JFrame{
 		textArea.append("Receiver  : " + job.getReceiverName() + "\n");
 		textArea.append("Contact   : " + job.getReceiverContact() + "\n");
 		textArea.append("Item      : " + job.getReceiverParcel() + "\n");
-		textArea.append("Weight    : " + job.getReceiverParcel() + "\n");
+		textArea.append("Weight    : " + job.getReceiverParcelWeight() + "\n");
 		textArea.append("Insurance : " + job.getReceiverInsurance() + "\n");
 		textArea.append("Payment   : " + job.getReceiverPayment() + "\n");
 		textArea.append("Remark    : " + job.getReceiverRemark() + "\n");
@@ -42,9 +45,12 @@ public class JobDescription extends JFrame{
 		
 		
 		
-		JPanel p1 = new JPanel(new GridLayout(5,2,5,5));
+		JPanel p1 = new JPanel(new GridLayout(8,1,5,5));
 		p1.add(driver);
+		p1.add(demail);
 		p1.add(dcontact);
+		p1.add(gender);
+		p1.add(license);
 		p1.add(vehicle);
 		p1.add(plate);
 		p1.add(date);

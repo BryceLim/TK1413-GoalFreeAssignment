@@ -65,8 +65,11 @@ public class RegisterVehicle extends JFrame implements ActionListener{
         pane.add(p1,BorderLayout.CENTER);
         pane.add(p2, BorderLayout.SOUTH);
 
-        vehicle = new Vehicle[10];    
-        currentIndex = 0;
+        vehicle = new Vehicle[10];
+        vehicle[0] = new Vehicle("Motorcycle", "Yamaha EX5", "NKL 2352", "2013", Ddata[0]);
+        vehicle[1] = new Vehicle("Motorcycle", "Honda RS150R", "WDC 9525", "2016", Ddata[1]);
+        vehicle[2] = new Vehicle("Van", "Toyota Hiace", "WDC 9525", "2015", Ddata[2]);    
+        currentIndex = 3;
 
         register.addActionListener(this);
 

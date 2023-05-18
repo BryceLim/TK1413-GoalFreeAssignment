@@ -24,7 +24,7 @@ public class RegisterParcel extends JFrame implements ActionListener {
 		setVisible(true);
 		setSize(800, 300);
 		
-		Pdata=new String[]{"Electronic product", "Household goods", "Clothing", "Accessories", "Cosmetic", "Food", "Other"};
+		Pdata=new String[]{"Electronic product", "Household Goods", "Clothing", "Accessories", "Cosmetic", "Food", "Other"};
 		Rdata=RegisterReceiver.getArrayReceiver();
 		
 		ParcelInfo=new JLabel("Parcel Info", JLabel.CENTER);
@@ -107,7 +107,13 @@ public class RegisterParcel extends JFrame implements ActionListener {
 		pane.add(a2, BorderLayout.SOUTH);
 		
 		parcel=new Parcel[10];
-		currentIndex=0;
+		parcel[0] = new Parcel("Electronic Product", "Parcel", "20.0", "Paid", "12.00", "Fragile", true, Rdata[0]);
+		parcel[1] = new Parcel("Household Goods", "Parcel", "4.7", "Paid", "10.00", "Fragile", true, Rdata[1]);
+		parcel[2] = new Parcel("Clothing", "Parcel", "2.3", "Paid", "2.00", "Fragile", false, Rdata[2]);
+		parcel[3] = new Parcel("Accessories", "Document", "0.5", "COD", "3.00", "Fragile", true, Rdata[3]);
+		parcel[4] = new Parcel("Cosmetic", "Document", "5.0", "COD", "5.00", "Fragile", false, Rdata[4]);
+		parcel[5] = new Parcel("Food", "Parcel", "11.5", "COD", "13.00", "Fragile", true, Rdata[5]);
+		currentIndex=6;
 		
 	}
 	

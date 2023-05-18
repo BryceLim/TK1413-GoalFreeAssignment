@@ -14,9 +14,22 @@ public class Job {
         return driver.getDriverName();
     }
 
+    public String getDriverEmail(){
+        return driver.getDriverEmail();
+    }
+
     public String getDriverContact(){
         return driver.getDriverContact();
     }
+
+    public String getDriverGender(){
+        return driver.getDriverGender();
+    }
+
+    public String getDriverLicense(){
+        return driver.getDriverLicense();
+    }
+
     public String getVehicle(){
         return driver.getType() + "(" + driver.getModel() + ")";
     }
