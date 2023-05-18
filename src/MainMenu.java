@@ -5,7 +5,7 @@ import java.awt.event.*;
 public class MainMenu extends JFrame implements ActionListener{
 
     JLabel title;
-    JButton recBt, parBt, driBt, vehBt, jobBt;
+    JButton recBt, parBt, driBt, vehBt, jobBt, listjobBt;
 
     public MainMenu(){
 
@@ -20,13 +20,14 @@ public class MainMenu extends JFrame implements ActionListener{
         driBt = new JButton("Register Driver");
         vehBt = new JButton("Register Vehicle");
         jobBt = new JButton("Assign Jobs");
-        jobBt.setSize(0,0);
+        listjobBt = new JButton("List Jobs");
         
         recBt.addActionListener(this);
         parBt.addActionListener(this);
         driBt.addActionListener(this);
         vehBt.addActionListener(this);
         jobBt.addActionListener(this);
+        listjobBt.addActionListener(this);
 
         JPanel p1 = new JPanel(new GridLayout(1,2,10,10));
         p1.add(recBt);
@@ -36,8 +37,9 @@ public class MainMenu extends JFrame implements ActionListener{
         p2.add(driBt);
         p2.add(vehBt);
 
-        JPanel p3 = new JPanel(new GridLayout(1,1,10,10));
+        JPanel p3 = new JPanel(new GridLayout(1,2,10,10));
         p3.add(jobBt);
+        p3.add(listjobBt);
 
         pane.add(title);
         pane.add(p1);
@@ -62,6 +64,9 @@ public class MainMenu extends JFrame implements ActionListener{
     	if(obj==jobBt) {
     		new AssignJobs();
     	}
+        if(obj==listjobBt) {
+            new JobList();
+        }
    	 
     }
 

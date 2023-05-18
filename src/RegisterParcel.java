@@ -21,6 +21,7 @@ public class RegisterParcel extends JFrame implements ActionListener {
 		((JComponent)pane).setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 		
 		setTitle("Register Parcel");
+		setResizable(false);
 		setVisible(true);
 		setSize(800, 300);
 		

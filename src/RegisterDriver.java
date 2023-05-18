@@ -85,7 +85,7 @@ public class RegisterDriver extends JFrame implements ActionListener{
 
         driver = new Driver[10];
         driver[0] = new Driver("Ali bin Abu", "ali@gmail.com", "0124758395", "26", "Male", "B2/B & D");
-        driver[1] = new Driver("Pavithran", "pavi@gmail.com", "0163859374", "31", "Male", "B2/B");
+        driver[1] = new Driver("Pavithran", "pavi@gmail.com", "0163859374", "31", "Male", "B2/B & D");
         driver[2] = new Driver("Wong Ah Miao", "miao@gmail.com", "0139567293", "25", "Female", "D");   
         currentIndex = 3;
 		

@@ -11,8 +11,8 @@ public class AssignJobs extends JFrame implements ActionListener {
     private JButton confirmB;
     private Parcel[]  Pdata;
     private Vehicle[] Vdata;
-    private static Job[] job;
-    private static int currentIndex;
+    private static Job[] job = new Job[1];
+    private static int currentIndex = 0;
 
     public AssignJobs(){
 
@@ -59,9 +59,6 @@ public class AssignJobs extends JFrame implements ActionListener {
         driverCB.addActionListener(this);
         confirmB.addActionListener(this);
 
-        currentIndex = 0;
-        job = new Job[5];
-
     }
     public void actionPerformed(ActionEvent e) {
 		Object obj=e.getSource();
@@ -85,14 +82,12 @@ public class AssignJobs extends JFrame implements ActionListener {
             currentIndex++;
 
             if(currentIndex >= job.length){
-                Job[] newJobs = new Job[job.length * 2];
+                Job[] newJobs = new Job[job.length + 1];
                 System.arraycopy(job, 0, newJobs, 0, job.length);;
                 job = newJobs;
             }
 
             dateTF.setText("");
-
-            new JobDescription(newjob);
           
         }
 			
