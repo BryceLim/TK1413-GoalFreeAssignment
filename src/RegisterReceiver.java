@@ -20,7 +20,8 @@ public class RegisterReceiver extends JFrame implements ActionListener{
 		setVisible(true);
 		setSize(400, 300);
 		
-		ReceiverInfo=new JLabel("Receiver Info", JLabel.CENTER);
+		ReceiverInfo=new JLabel("~Receiver Info~", JLabel.CENTER);
+		ReceiverInfo.setFont(new Font("Serif", Font.BOLD, 20));
 		rName=new JLabel("Name: ");
 		rEmail=new JLabel("Email: ");
 		rContact=new JLabel("Contact Number");

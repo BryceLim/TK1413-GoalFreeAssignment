@@ -24,7 +24,8 @@ public class RegisterDriver extends JFrame implements ActionListener{
         setVisible(true);
         setSize(500, 310);
 
-        title = new JLabel("Driver Info");
+        title = new JLabel("~Driver Info~");
+        title.setFont(new Font("Serif", Font.BOLD, 20));
         nameL = new JLabel("Name :");
         nameTF = new JTextField(20);
         emailL = new JLabel("Email :");

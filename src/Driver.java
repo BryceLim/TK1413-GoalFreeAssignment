@@ -1,20 +1,14 @@
 public class Driver extends Person{
 
-	private String dContact;
 	private String age;
 	private String gender;
 	private String license;
 	
-	public Driver(String dn,String de,String cd,String dage,String dgender,String ls) {
-		super(dn,de);
-		dContact = cd;
+	public Driver(String dn,String de,String dc,String dage,String dgender,String lic) {
+		super(dn,de, dc);
 		age = dage;
 		gender = dgender;
-		license = ls;
-	}
-	
-	public String getContact() {
-		return dContact;
+		license = lic;
 	}
 	
 	public String getAge() {

@@ -24,7 +24,8 @@ public class RegisterVehicle extends JFrame implements ActionListener{
 
         Ddata = RegisterDriver.getArrayDriver();
         
-        title = new JLabel("Vehicle Info", JLabel.CENTER);
+        title = new JLabel("~Vehicle Info~", JLabel.CENTER);
+        title.setFont(new Font("Serif", Font.BOLD, 20));
         type = new JLabel("Type :");
         model = new JLabel("Model :");
         plate = new JLabel("Registration Plate :");

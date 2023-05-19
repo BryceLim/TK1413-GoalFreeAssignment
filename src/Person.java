@@ -2,10 +2,12 @@ public class Person {
 
     String name;
     String email;
+    String contact;
 
-    public Person(String nm, String eml){
+    public Person(String nm, String eml, String ct){
         name = nm;
         email = eml;
+        contact = ct;
     }
 
     public String getName(){
@@ -14,6 +16,10 @@ public class Person {
 
     public String getEmail(){
         return email;
+    }
+
+    public String getContact(){
+        return contact;
     }
     
 }

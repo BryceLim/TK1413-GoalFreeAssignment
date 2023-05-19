@@ -28,7 +28,8 @@ public class RegisterParcel extends JFrame implements ActionListener {
 		Pdata=new String[]{"Electronic product", "Household Goods", "Clothing", "Accessories", "Cosmetic", "Food", "Other"};
 		Rdata=RegisterReceiver.getArrayReceiver();
 		
-		ParcelInfo=new JLabel("Parcel Info", JLabel.CENTER);
+		ParcelInfo=new JLabel("~Parcel Info~", JLabel.CENTER);
+		ParcelInfo.setFont(new Font("Serif", Font.BOLD, 20));
 		itemType=new JLabel("Item type: ");
 		shippingFee=new JLabel("Shipping fee(RM): ");
 		itemCategory=new JLabel("Item category: ");

@@ -14,7 +14,7 @@ public class MainMenu extends JFrame implements ActionListener{
         ((JComponent)pane).setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         title = new JLabel("TKL EXPRESS", JLabel.CENTER);
-        title.setFont(new Font("Verdana", Font.PLAIN, 40));
+        title.setFont(new Font("Monospaced", Font.BOLD, 40));
         recBt = new JButton("Register Receiver");
         parBt = new JButton("Register Parcel");
         driBt = new JButton("Register Driver");

@@ -28,7 +28,8 @@ public class AssignJobs extends JFrame implements ActionListener {
         Pdata = RegisterParcel.getArrayParcel();
         Vdata = RegisterVehicle.getArrayVehicle();
 
-        title = new JLabel("Assign Jobs");
+        title = new JLabel("~Assign Jobs~");
+        title.setFont(new Font("Serif", Font.BOLD, 20));
         driverL = new JLabel("Driver:");
         dateL = new JLabel("Shipment Date(DD/MM/YYYY):");
         receiverL = new JLabel("Receiver:");
